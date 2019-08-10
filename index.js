@@ -5,6 +5,7 @@ var app = express();
 
 
 var patientController = require('./controllers/patientController');
+var internetRelayregController = require('./controllers/internetRelayregController');
 
 
 
@@ -30,5 +31,6 @@ app.listen(process.env.PORT || 3000, function(){
 });
 
 app.use('/patient', patientController);
+app.use('/internet-relay', internetRelayregController);
 
 
