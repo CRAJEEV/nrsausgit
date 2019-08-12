@@ -30,7 +30,7 @@ router.get('/:id', (req, res) => {
         if (!rows.length == 0)
             res.send(rows);
         else
-        res.send("Sorry No Data Found With This Id:" + req.params.id);
+        res.send("Sorry No Data Found With This :" + req.params.id);
     
     })
 });
