@@ -47,6 +47,7 @@ router.delete('/:id', (req, res) => {
 
 //Insert an patient
 router.post('/add', (req, res) => {
+    
     let addIruserData = req.body;
 
     var ADD_IRUSER_DATA = "SET @user_id = ?;SET @first_name = ?;SET @last_name = ?;SET @email = ?;SET @login_phone = ?;SET @password = ?;SET @secrete_question = ?;SET @secrete_question_answer = ?;SET @terms_agree = ?;SET @receive_update_agree = ?;SET @Created_by = ?;SET @Updated_by = ?;SET @Created_date = ?;SET @Updated_date = ?;SET @Is_active = ?; \
